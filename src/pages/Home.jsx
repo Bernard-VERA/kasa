@@ -1,18 +1,19 @@
-import React from "react";
+import React from "react"
 import image_home from '../assets/image_home.png';
+import DisplayCards from "../components/DisplayCards"
 import '../styles/home.scss'
 
 
- function Home () {
+ export default function Home () {
 
-    return(
-        <main className="main-home">
+    return (
+        <main className="main_home">
             <div className="banner">
                 <img className="banner_img" src={image_home} alt="" />
                 <h1 className="banner_title">Chez vous, partout et ailleurs</h1>
             </div>
+            <DisplayCards />
         </main>
     )
 }
 
-export default Home;

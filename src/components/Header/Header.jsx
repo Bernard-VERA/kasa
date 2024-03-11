@@ -7,6 +7,7 @@ import './Header.scss';
 
 
 function Header() {
+
     return (
         <header className='header_container'>
             <Link  to="/">
@@ -15,6 +16,8 @@ function Header() {
             <nav className="navbar">
                 <div className="navlink">
                     <Link className="nav" to="/">Accueil</Link>
+                </div>
+                <div className="navlink">
                     <Link className="nav" to="/">À propos</Link>
                 </div>
             </nav>

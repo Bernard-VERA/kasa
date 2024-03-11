@@ -4,6 +4,7 @@ import About from './pages/About';
 import {Routes, Route} from 'react-router-dom'
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import Logement from './pages/Logement'
 import './styles/GlobalStyle.scss'
 
 
@@ -15,6 +16,7 @@ function App() {
     <Routes>
         <Route path="/" element={<Home />} />
         <Route path="About" element={<About />} />
+        <Route path="/logement/:logementId" element={<Logement />}/>
      </Routes>
     </main>
     <Footer />

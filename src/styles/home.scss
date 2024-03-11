@@ -1,17 +1,21 @@
-.main-home {
+.main_home {
     max-width: 1240px;
-    margin: auto;   
+    margin: auto;
 }
 
 .banner {
-    position: relative;
-    margin: 0 auto;
-    margin-top: 63px;
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    justify-content: center;
+    
 }
 
 .banner_img {
     width: 100%;
+    position: relative;
     height: 223px;
+    max-width: 1240px;
     object-fit: cover;
     border-radius: 25px;
     filter: brightness(40%)
@@ -20,16 +24,13 @@
     font-size: 48px;
     z-index: 1;
     position: absolute;
-    top: 40%;
-    left: 40%;
-    max-width: 733px;
-    transform: translate(-33%);
-    width: 66%;
+    padding: 20px;
+  
+    
+ 
+    
     color: #FFFFFF;
-    text-shadow:
-    0.5px 1px 0 #000,
-    -0.5px 1px 0 #000,
-    -0.5px -1px 0 #000,
-    0.5px -1px 0 #000;
+    text-shadow:0 0 2px black;
+    
     
 }
