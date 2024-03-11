@@ -1,0 +1,35 @@
+.main-home {
+    max-width: 1240px;
+    margin: auto;   
+}
+
+.banner {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 63px;
+}
+
+.banner_img {
+    width: 100%;
+    height: 223px;
+    object-fit: cover;
+    border-radius: 25px;
+    filter: brightness(40%)
+}
+.banner_title {
+    font-size: 48px;
+    z-index: 1;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    max-width: 733px;
+    transform: translate(-33%);
+    width: 66%;
+    color: #FFFFFF;
+    text-shadow:
+    0.5px 1px 0 #000,
+    -0.5px 1px 0 #000,
+    -0.5px -1px 0 #000,
+    0.5px -1px 0 #000;
+    
+}
