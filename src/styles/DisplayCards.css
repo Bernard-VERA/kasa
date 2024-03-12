@@ -1,0 +1,63 @@
+.logements_container {
+  width: 100%;
+  margin: 2rem auto;
+  background: grey;
+  border-radius: 10px;
+  background-color: #F6F6F6;
+  max-width: 1240px;
+}
+
+.logements_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  padding: 1rem;
+  list-style-type: none;
+}
+
+.logement {
+  width: 33.3%;
+}
+
+.logement_figure {
+  align-items: center;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  margin-block: 0;
+  margin: 1rem;
+  position: relative;
+  transition: 0.25s;
+}
+
+.logement_figure:hover {
+  transform: scale(1.02);
+}
+
+.logement_figure_cover {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 290px;
+  border-radius: 10px;
+}
+
+.logement_figure_figcaption {
+  height: 100px;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.4) 50%);
+  border-radius: 10px;
+}
+
+.logement_figure_figcaption_title {
+  position: absolute;
+  width: 95%;
+  bottom: 0;
+  left: 10px;
+  font-size: 18px;
+  color: white;
+}/*# sourceMappingURL=DisplayCards.css.map */

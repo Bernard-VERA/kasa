@@ -1,53 +1,68 @@
+import React from 'react';
+import logements from '../data/logements.json';
+import { NavLink, useParams } from 'react-router-dom';
+import Gallery from '../components/Gallery';
+import RatingScale from '../components/RatingScale';
+import Collapse from '../components/Collapse';
 
-import { useParams, Navigate} from 'react-router-dom';
+const Logement = () => {
 
-
-function Logement () {
-    const data = require("../data/logements.json")
-    function getLogementWithId (data, logementId) {
-        for (let logement of data) {
-          if (logement.id === logementId) { 
-          return logement
-      }}}
-    
-      const {logementId} = useParams()
-      const logement = getLogementWithId(data, logementId)
-      
-      return (
-        <main className='main_location'>
-        { logement ? (
-        <section >
-          
-          
-          
-          <div className='location'>
-            <div className='location_header'>
-                 <h2 className='location_header_title'key={"title"+logement.id}>{logement.title}</h2>
-                 <div className='location_header_city' key={"location"+logement.id}>{logement.location}</div>
-                 <ul className='location_header_tags'>{logement.tags.map((tag)=>
-                   <li className='location_header_tags_tag' key={tag}>{tag}</li>)}
-                  </ul>
-            </div>
-          
-            <div className='location_host'>
-              <div id="host" className='location_host_info'>
-                <div className='host_name'>{logement.host.name}</div> 
-                <img className='host_picture' src={logement.host.picture} alt="" />
-              </div>
-              
-          </div>
-          </div>
-  
-          <div className='location_info'>
-              
-              
-          </div>
-              
-        </section>   
-  //si logement inexistant retourne page error
-        ) : <Navigate replace to="../../components/Error"/> }
-      </main>
-        )
+  const { id } = useParams()
+  const logement = logements.find(logement => logement.id === id)
+  if (logement === undefined) {
+    return <section className="error_page">
+              <p className="error_page_text">Oups! La page que vous demandez n'existe pas.</p>
+              <NavLink className="error_page_link" title="Accueil" end to="/Home">Retourner sur la page d'accueil</NavLink>
+            </section>
   }
 
-export default Logement
+  return (
+      <section key={logement.id} className='logement_page'>
+        <Gallery 
+        img={logement.pictures} 
+        />
+        <header className='logement_page_header'>
+                <article className='logement_page_header_infos'>
+                    <h1 className='logement_page_header_infos_title'>{logement.title}</h1>
+                    <h2 className='logement_page_header_infos_subtitle'>{logement.location}</h2>
+                    <div className='logement_page_header_infos_tags'>
+                        {logement.tags.map((tag, i) => (
+                            <p key={i} className='logement_page_header_infos_tags_tag'>{tag}</p>
+                        ))}
+                    </div>
+                </article>
+            
+                <article className='logement_page_header_hoster'>
+                    <div className='logement_page_header_hoster_infos'>
+                        <p className='logement_page_header_hoster_infos_name'>{logement.host.name}</p>
+                        <img src={logement.host.picture} alt='host-cover' className='logement_page_header_hoster_infos_img'/>
+                    </div>
+                    <RatingScale
+                        scaleValue={logement.rating}
+                    />
+                </article>
+            </header>
+
+            <article className='logement_page_collapses'>
+                <div className='logement_page_collapses_content'>
+                    <Collapse
+                        title='Description'
+                        content={logement.description}
+                    />
+                </div>
+                <div className='logement_page_collapses_content'>
+                    <Collapse
+                        title='Équipements'
+                        content={logement.equipments.map((equipment, i) => (
+                            <ul key={i}>
+                                <li>{equipment}</li>
+                            </ul>
+                        ))}
+                    />
+                </div>
+            </article>
+        </section>
+    )
+}
+
+export default Logement;

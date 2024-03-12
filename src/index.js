@@ -5,11 +5,6 @@ import './index.scss';
 import App from './App';
 import './styles/GlobalStyle.scss'
 
-
-// eslint-disable-next-line
-import reportWebVitals from './reportWebVitals';
-
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Router>

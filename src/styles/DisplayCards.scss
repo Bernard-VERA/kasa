@@ -1,4 +1,4 @@
-.housings_container {
+.logements_container {
     width: 100%;
     margin: 2rem auto;
     background: grey;
@@ -10,7 +10,7 @@
 
 }
 
-.housings_list {
+.logements_list {
     display: flex;
     flex-wrap: wrap;
     justify-content:left;
@@ -19,12 +19,12 @@
 
 }
 
-.housing {
+.logement {
     width: 33.3%;
    
    
 }
-.housing_figure {
+.logement_figure {
     align-items: center;
     border-radius: .5rem;
     display: flex;
@@ -34,11 +34,11 @@
     position: relative;
     transition: .25s;
 }
-.housing_figure:hover {
+.logement_figure:hover {
     transform: scale(1.02);
 }
 
-.housing_figure_cover
+.logement_figure_cover
  {
     width: 100%;
     object-fit: cover;
@@ -46,7 +46,7 @@
     border-radius: 10px;
     
     }
-.housing_figure_figcaption {
+.logement_figure_figcaption {
     height: 100px;
     position: absolute;
     width: 100%;
@@ -56,7 +56,7 @@
     background: linear-gradient(rgba(0,0,0,0)25%,rgba(0,0,0,0.4)50%);
     border-radius: 10px;
 }
-.housing_figure_figcaption_title {
+.logement_figure_figcaption_title {
     position: absolute;
     width: 95%;
     bottom: 0;

@@ -1,0 +1,31 @@
+.main_home {
+  max-width: 1240px;
+  margin: auto;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  margin: 20px auto;
+  justify-content: center;
+}
+
+.banner_img {
+  width: 100%;
+  position: relative;
+  height: 223px;
+  max-width: 1240px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+  filter: brightness(40%);
+}
+
+.banner_title {
+  font-size: 48px;
+  z-index: 1;
+  position: absolute;
+  padding: 20px;
+  color: #FFFFFF;
+  text-shadow: 0 0 2px black;
+}/*# sourceMappingURL=Home.css.map */

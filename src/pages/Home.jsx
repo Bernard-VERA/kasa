@@ -1,7 +1,7 @@
 import React from "react"
 import image_home from '../assets/image_home.png';
 import DisplayCards from "../components/DisplayCards"
-import '../styles/home.scss'
+import '../styles/Home.scss'
 
 
  export default function Home () {
