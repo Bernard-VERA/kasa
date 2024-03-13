@@ -4,6 +4,7 @@ import { NavLink, useParams } from 'react-router-dom';
 import Gallery from '../components/Gallery';
 import RatingScale from '../components/RatingScale';
 import Collapse from '../components/Collapse';
+import '../styles/Logement.css'
 
 const Logement = () => {
 
@@ -23,8 +24,8 @@ const Logement = () => {
         />
         <header className='logement_page_header'>
                 <article className='logement_page_header_infos'>
-                    <h1 className='logement_page_header_infos_title'>{logement.title}</h1>
-                    <h2 className='logement_page_header_infos_subtitle'>{logement.location}</h2>
+                    <p className='logement_page_header_infos_title'>{logement.title}</p>
+                    <p className='logement_page_header_infos_subtitle'>{logement.location}</p>
                     <div className='logement_page_header_infos_tags'>
                         {logement.tags.map((tag, i) => (
                             <p key={i} className='logement_page_header_infos_tags_tag'>{tag}</p>
@@ -32,10 +33,10 @@ const Logement = () => {
                     </div>
                 </article>
             
-                <article className='logement_page_header_hoster'>
-                    <div className='logement_page_header_hoster_infos'>
-                        <p className='logement_page_header_hoster_infos_name'>{logement.host.name}</p>
-                        <img src={logement.host.picture} alt='host-cover' className='logement_page_header_hoster_infos_img'/>
+                <article className='logement_page_header_host'>
+                    <div className='logement_page_header_host_infos'>
+                        <p className='logement_page_header_host_infos_name'>{logement.host.name}</p>
+                        <img src={logement.host.picture} alt='host-cover' className='logement_page_header_host_infos_img'/>
                     </div>
                     <RatingScale
                         scaleValue={logement.rating}

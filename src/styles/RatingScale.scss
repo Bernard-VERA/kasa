@@ -1,0 +1,19 @@
+.rating_star {
+    width: 400px;
+    height: 36px;
+    margin-top: 24px;
+    text-align: right;
+   
+
+    &_red {
+        width: 36px;
+        height: 36px;
+        padding-left: 15px;
+    }
+
+    &_grey {
+        width: 36px;
+        height: 36px;
+        padding-left: 15px;
+    }
+}
