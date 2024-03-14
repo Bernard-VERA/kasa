@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
 }
 .logement_page_header {
   display: flex;
@@ -43,13 +44,14 @@
   border-radius: 11px;
   flex-shrink: 0;
   font-size: 14px;
+  font-weight: 700;
   text-align: center;
 }
 .logement_page_header_host {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  max-width: 250px;
+  max-width: 20px;
 }
 .logement_page_header_host_infos {
   display: flex;
@@ -73,4 +75,21 @@
      object-fit: cover;
   border-radius: 50%;
   padding-right: 5px;
+}
+.logement_page_collapses {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  padding-top: 24px;
+}
+.logement_page_collapses_content {
+  max-width: 582px;
+  width: 100%;
+  list-style: none;
+  border-radius: 18px;
+}
+.logement_page_collapses_content_li {
+  list-style: none;
 }/*# sourceMappingURL=Logement.css.map */

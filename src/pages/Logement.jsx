@@ -56,7 +56,7 @@ const Logement = () => {
                         title='Équipements'
                         content={logement.equipments.map((equipment, i) => (
                             <ul key={i}>
-                                <li>{equipment}</li>
+                                <li className="nolist" >{equipment}</li>
                             </ul>
                         ))}
                     />

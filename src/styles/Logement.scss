@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
 
     &_header {
         display: flex;
@@ -45,6 +46,7 @@
                         border-radius: 11px;
                         flex-shrink: 0;
                         font-size: 14px;
+                        font-weight: 700;
                         text-align: center;                       
                         }     
                 }   
@@ -54,7 +56,7 @@
             display: flex;
             flex-direction: column;
             align-items: flex-end;
-            max-width: 250px;
+            max-width: 20px;
         
             &_infos {
                 display: flex;
@@ -80,6 +82,27 @@
                     padding-right: 5px;
                     }
                 }      
+        }
+    }
+
+    &_collapses {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        justify-content: space-between;
+        padding-top: 24px;
+
+        &_content {
+            max-width: 582px;
+            width: 100%;
+            list-style: none;
+            border-radius: 18px;
+
+            &_li {
+                list-style: none; 
+            }
+            
         }
     }
 }
