@@ -1,20 +1,18 @@
 import React from 'react';
 import logements from '../data/logements.json';
-import { NavLink, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import Gallery from '../components/Gallery';
 import RatingScale from '../components/RatingScale';
 import Collapse from '../components/Collapse';
 import '../styles/Logement.css'
+import Error from './Error';
 
 const Logement = () => {
 
   const { id } = useParams()
   const logement = logements.find(logement => logement.id === id)
   if (logement === undefined) {
-    return <section className="error_page">
-              <p className="error_page_text">Oups! La page que vous demandez n'existe pas.</p>
-              <NavLink className="error_page_link" title="Accueil" end to="/Home">Retourner sur la page d'accueil</NavLink>
-            </section>
+    return <Error />
   }
 
   return (

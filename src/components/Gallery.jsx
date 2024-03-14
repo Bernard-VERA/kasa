@@ -9,13 +9,7 @@ const angleRight =  <img className='vector_right' src={vector_right} alt=""/>;
 
 const Gallery = (props) => {
     const [slideIdx, setSlideIdx] = useState(0);
-    const imgSize = () => {
-        const slideshowImg = document.querySelector('.slideshow_container img');
-        if(!slideshowImg){
-            return 0;
-        }
-        return slideshowImg.width;
-    }
+    
 
     const onNext = () => {
         if(slideIdx === props.img.length - 1){
@@ -34,7 +28,7 @@ const Gallery = (props) => {
     }
     return (
         <div className='slideshow'>
-            <div className='slideshow_container' style={{transform: `translateX(-${slideIdx * imgSize()}px)`}}>
+            <div className='slideshow_container' style={{transform: `translateX(-${slideIdx * 100}%)`}}>
                 {props.img.map((picture, i) => 
                     <img className='slideshow_container_img' alt='diaporama-page-logement' src={picture} key={i} />
                 )}

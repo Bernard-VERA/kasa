@@ -5,6 +5,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: #FF6060;
+  border-radius: 10px;
 }
 .collapse_header_title {
   font-size: 18px;
@@ -19,11 +20,11 @@
   display: flex;
   flex-direction: column;
   padding: 20px;
-  list-style: none;
   visibility: visible;
   z-index: 1;
   height: 60px;
 }
-.collapse_content_nolist {
+
+ul {
   list-style: none;
 }/*# sourceMappingURL=Collapse.css.map */
