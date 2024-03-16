@@ -26,6 +26,21 @@
   z-index: 1;
   position: absolute;
   padding: 20px;
+  margin: 0px 20px;
   color: #FFFFFF;
   text-shadow: 0 0 2px black;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .banner_title {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .banner_title {
+    font-size: 24px;
+  }
+  .banner_img {
+    max-height: 111px;
+  }
 }/*# sourceMappingURL=Home.css.map */

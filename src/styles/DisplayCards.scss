@@ -5,9 +5,6 @@
     border-radius: 10px;
     background-color: #F6F6F6;
     max-width: 1240px;
-   
-   
-
 }
 
 .logements_list {
@@ -16,14 +13,12 @@
     justify-content:left;
     padding: 1rem;
     list-style-type: none;
-
 }
 
 .logement {
-    width: 33.3%;
-   
-   
+    width: 33.3%;   
 }
+
 .logement_figure {
     align-items: center;
     border-radius: .5rem;
@@ -34,18 +29,18 @@
     position: relative;
     transition: .25s;
 }
+
 .logement_figure:hover {
     transform: scale(1.02);
 }
 
-.logement_figure_cover
- {
+.logement_figure_cover {
     width: 100%;
     object-fit: cover;
     height: 290px;
-    border-radius: 10px;
-    
+    border-radius: 10px;  
     }
+
 .logement_figure_figcaption {
     height: 100px;
     position: absolute;
@@ -56,6 +51,7 @@
     background: linear-gradient(rgba(0,0,0,0)25%,rgba(0,0,0,0.4)50%);
     border-radius: 10px;
 }
+
 .logement_figure_figcaption_title {
     position: absolute;
     width: 95%;
@@ -64,3 +60,34 @@
     font-size: 18px;
     color: white;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .logement {
+        width: 50%;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .logements_container {
+        background-color: #FFFFFF;
+        margin: 0;
+    }
+
+    .logements_list {
+        padding: 0;
+    }
+
+    .logement {
+        width: 100%;
+    }
+
+    .logement_figure {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .logement_figure_cover {
+        height: 255px;
+    }
+
+    }

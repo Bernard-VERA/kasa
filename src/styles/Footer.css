@@ -12,12 +12,18 @@
   margin-top: 30px;
   align-items: center;
 }
-.footer_logo {
+.footer .footer_logo {
   margin-top: 66px;
   width: 122px;
 }
-.footer_text {
+.footer .footer_text {
   color: white;
   font-size: 24px;
   margin-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer_text {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=Footer.css.map */

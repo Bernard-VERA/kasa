@@ -6,7 +6,7 @@ import '../../styles/Footer.scss';
     return(
         <footer className="footer">
             <img src={ logo_white} className='footer_logo' alt='logo Kasa' />
-            <p className='footer_text'>© 2020 Kasa. All rights reserved</p>
+            <p className='footer_text'><span>© 2020 Kasa. All </span> <span>rights reserved</span></p>
         </footer>
     )
 }
