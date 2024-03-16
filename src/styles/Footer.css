@@ -23,7 +23,13 @@
 }
 
 @media screen and (max-width: 768px) {
-  .footer_text {
+  .footer {
+    margin-top: 0px;
+  }
+  .footer .footer_text {
+    max-width: 133px;
+    margin: 15px auto;
     font-size: 12px;
+    text-align: center;
   }
 }/*# sourceMappingURL=Footer.css.map */

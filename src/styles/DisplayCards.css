@@ -60,4 +60,29 @@
   left: 10px;
   font-size: 18px;
   color: white;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .logement {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .logements_container {
+    background-color: #FFFFFF;
+    margin: 0;
+  }
+  .logements_list {
+    padding: 0;
+  }
+  .logement {
+    width: 100%;
+  }
+  .logement_figure {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .logement_figure_cover {
+    height: 255px;
+  }
 }/*# sourceMappingURL=DisplayCards.css.map */

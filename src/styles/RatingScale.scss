@@ -3,17 +3,34 @@
     height: 36px;
     margin-top: 24px;
     text-align: right;
-   
+}
 
-    &_red {
-        width: 36px;
-        height: 36px;
-        padding-left: 15px;
-    }
+.rating_star_red {
+    width: 36px;
+    height: 36px;
+    padding-left: 15px;
+}
 
-    &_grey {
-        width: 36px;
-        height: 36px;
-        padding-left: 15px;
-    }
+.rating_star_grey {
+    width: 36px;
+    height: 36px;
+    padding-left: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .rating_star {
+        height: 18px;}
+
+     .rating_star img {
+        height: 18px;
+     }
+     
+     .rating_star_red  {
+        padding-left: 0px;
+        padding-right: 9px;
+     }
+
+     .rating_star_grey {
+        padding-left: 0px;
+     }
 }

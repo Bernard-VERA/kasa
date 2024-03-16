@@ -43,4 +43,26 @@
   top: 85%;
   left: 49%;
   color: #FFFFFF;
+}
+
+@media screen and (max-width: 768px) {
+  .slideshow_container_img {
+    height: 255px;
+  }
+  .slideshow_controls {
+    top: 42%;
+  }
+  .slideshow_controls_chevron {
+    height: 24px;
+    width: auto;
+    margin: 10px;
+  }
+  .slideshow_controls_chevron img {
+    height: 24px;
+    padding: 0px;
+    margin: 0px;
+  }
+  .slideshow_idx {
+    display: none;
+  }
 }/*# sourceMappingURL=Gallery.css.map */

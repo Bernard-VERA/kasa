@@ -35,4 +35,11 @@
 .content {
   margin-bottom: 10px;
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .collapse_header {
+    height: 30px;
+    border-radius: 5px;
+  }
 }/*# sourceMappingURL=About.css.map */
