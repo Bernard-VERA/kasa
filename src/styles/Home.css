@@ -20,7 +20,6 @@
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 25px;
-  filter: brightness(40%);
 }
 
 .banner_title {
