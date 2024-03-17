@@ -3,28 +3,31 @@ import { useState } from "react";
 import vector_up from '../assets/vector_up.png';
 import vector_down from '../assets/vector_up.png';
 import '../styles/Collapse.scss';
+// Importation du hook usestate pour pouvoir déclarer la variable d'état
 
 const vectorUp =  <img className='vectorup' src={vector_up} alt=""/>;
 const vectorDown =  <img className='vectordown' src={vector_down} alt=""/>;
+//Définition des images servant de chevron d'ouverture et fermeture
 
 const Collapse = (props) => {
     const [ openWrapper, setOpenWrapper ] = useState(false);
+// L'état initial (useState) est "false", c'est a dire "Collapse fermé"
 
     const openClose = () => {
         setOpenWrapper((openWrapper) => !openWrapper);
-    };
+    }; // La fonction openClose: SetopenWrapper permet de modifier la valeur de l'état
 
     return (
         <>
-        <div  className="collapse_header">
-            <p className="collapse_header_title">{props.title}</p>
+        <div  className="collapse_header"> 
+            <p className="collapse_header_title">{props.title}</p> 
             {!openWrapper ? <i onClick={openClose} className="collapse_header_image1" alt="">{vectorUp}</i> : <i onClick={openClose} className="collapse_header_image2" alt="">{vectorDown}</i>}
-        </div>
+        </div> 
         {openWrapper &&
             <div className="collapse_content">{props.content}</div>
         }
-        </>
-    )
+        </> // Au clic, "openclose" change l'état du chevron fermé et affiche le contenu des props (texte à afficher)
+    ) // le "title" affiche le contenu des props (titres)
 }
 
 export default Collapse

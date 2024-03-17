@@ -11,3 +11,4 @@ export default function Error () {
             </section> 
     )
 }
+// Le lien end to="/" permet de retourner sur la page d'accueil.

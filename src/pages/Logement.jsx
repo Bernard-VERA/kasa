@@ -6,14 +6,16 @@ import RatingScale from '../components/RatingScale';
 import Collapse from '../components/Collapse';
 import '../styles/Logement.css'
 import Error from './Error';
+// useParams est importé avec tous les autres composants
 
 const Logement = () => {
 
+    // Le hook "useParams" permet d'extraire les paramètres des logements (id) 
   const { id } = useParams()
   const logement = logements.find(logement => logement.id === id)
   if (logement === undefined) {
     return <Error />
-  }
+  } // Si le logement est "undefined" on est renvoyé vers la page d'erreur
 
   return (
       <section key={logement.id} className='logement_page'>
@@ -28,8 +30,8 @@ const Logement = () => {
                         {logement.tags.map((tag, i) => (
                             <p key={i} className='logement_page_header_infos_tags_tag'>{tag}</p>
                         ))}
-                    </div>
-                </article>
+                    </div> 
+                </article> 
             
                 <article className='logement_page_header_host'>
                     <div className='logement_page_header_host_infos'>
@@ -63,5 +65,6 @@ const Logement = () => {
         </section>
     )
 }
+// Dans "Header" et "Equipement" les paramètres sont récupérés par "map" dans des listes crées par "key" 
 
 export default Logement;
