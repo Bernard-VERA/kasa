@@ -1,7 +1,7 @@
 import React from "react"
 import image_apropos from '../assets/image_apropos.png';
 import Collapse from '../components/Collapse.jsx';
-import '../styles/About.scss'
+import '../styles/About.css'
 
 
  export default function About () {

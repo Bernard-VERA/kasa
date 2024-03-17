@@ -1,3 +1,5 @@
+@import "variables";
+
 .collapse {
     -ms-transition: transform all 0.4s ease-in-out;
     -webkit-transition: transform all 0.4s ease-in-out;
@@ -12,7 +14,7 @@
     height: 100%;
     justify-content: space-between;
     align-items: center;
-    background-color: #FF6060;
+    background-color: $color-red;
     border-radius: 7.5px; 
 }
         
@@ -29,7 +31,7 @@
 .collapse_header_title {
     font-size: 24px;
     font-weight: 700;
-    color: #FFFFFF;
+    color: $color-white;
     padding-left: 14px;
 }
 

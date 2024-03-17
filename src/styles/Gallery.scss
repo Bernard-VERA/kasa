@@ -1,3 +1,5 @@
+@import "variables";
+
 .slideshow {
     position: relative;
     margin: auto;
@@ -15,7 +17,7 @@
             flex-shrink: 0;
             width: 100%;
             height: 415px;
-             max-width: 1240px;
+            max-width: 1240px;
             object-fit: cover;
             border-radius: 25px;
         }
@@ -44,9 +46,8 @@
         flex-direction: column;
         top: 85%;
         left: 49%;
-        color: #FFFFFF;
+        color: $color-white;
     }
-
 }
 
 @media screen and (max-width: 768px) {

@@ -1,3 +1,5 @@
+@import "variables";
+
 .logement_page {
     max-width: 1240px;
     display: flex;
@@ -25,12 +27,12 @@
     flex-wrap: wrap;
     margin-top: 5px;
     font-size: 36px;
-    color: #FF6060;
+    color: $color-red;
     }
 
 .logement_page_header_infos_subtitle {
     font-size: 18px;
-    color: #000000;
+    color: $color-black;
     margin-top: 10px;
     margin-bottom: 10px;
     }
@@ -47,8 +49,8 @@
     height: 25px;
     padding: 0px 30px;
     margin: 10px 015px 0px 0px;
-    background-color: #FF6060;
-    color: #FFFFFF;
+    background-color: $color-red;
+    color: $color-white;
     border-radius: 10px;
     flex-shrink: 0;
     font-size: 14px;
@@ -74,7 +76,7 @@
     width: 93px;
     height: 52px;
     font-size: 18px;
-    color: #FF6060;
+    color: $color-red;
     text-align: right;
     margin: auto 10px auto 0px;
     line-height: 27px;

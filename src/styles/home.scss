@@ -1,3 +1,5 @@
+@import "variables";
+
 .main_home {
     max-width: 1240px;
     margin: auto;
@@ -7,17 +9,19 @@
     display: flex;
     align-items: center;
     margin: 20px auto;
-    justify-content: center;    
+    border-radius: 25px;
+    justify-content: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.banner_img {
+.banner img {
     width: 100%;
     position: relative;
     height: 223px;
     max-width: 1240px;
     object-fit: cover;
     border-radius: 25px;
-    filter: brightness(40%)
+    
 }
 
 .banner_title {
@@ -26,8 +30,8 @@
     position: absolute;
     padding: 20px;
     margin: 0px 20px;   
-    color: #FFFFFF;
-    text-shadow:0 0 2px black;   
+    color: $color-white;
+    text-shadow:0 0 2px $color-black;   
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
