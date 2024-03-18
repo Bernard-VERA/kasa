@@ -18,7 +18,7 @@ const Logement = () => {
   } // Si le logement est "undefined" on est renvoyé vers la page d'erreur
 
   return (
-      <section key={logement.id} className='logement_page'>
+      <section className='logement_page'>
         <Gallery 
         img={logement.pictures} 
         />

@@ -54,9 +54,9 @@
 
 .logement_figure_figcaption_title {
   position: absolute;
-  width: 95%;
-  bottom: 0;
-  left: 10px;
+  width: 75%;
+  bottom: 10px;
+  left: 15px;
   font-size: 18px;
   color: #FFFFFF;
 }
