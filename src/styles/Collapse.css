@@ -1,5 +1,6 @@
 .collapse {
   transition: transform all 0.4s ease-in-out;
+  overflow: hidden;
 }
 
 .collapse_header {
@@ -10,16 +11,18 @@
   align-items: center;
   background-color: #FF6060;
   border-radius: 7.5px;
+  overflow: hidden;
 }
 
 .collapse_header_image1 img {
   transform: rotate(0deg);
   transition: transform 0.4s ease-in-out;
+  overflow: hidden;
 }
 
 .collapse_header_image2 img {
   transform: rotate(180deg);
-  transition: transform 0.4s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 
 .collapse_header_title {
@@ -38,21 +41,23 @@
 }
 
 .collapse_content {
-  display: flex;
+  display: block;
   flex-direction: column;
   padding: 20px;
-  visibility: visible;
-  z-index: 1;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
   background-color: rgba(246, 246, 246, 0.4509803922);
   border-radius: 5px;
-  transform-origin: 0 0;
-  transform: translateY(2px);
-  transition: max-height 2s ease-out, padding 3s ease-out;
+  animation: slide 0.2s ease-out;
 }
 
+@keyframes slide {
+  from {
+    transform: scaleY(0.7);
+    transform-origin: top;
+  }
+}
 .collapse_content ul {
   margin-left: -40px;
 }
