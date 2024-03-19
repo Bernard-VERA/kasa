@@ -1,8 +1,8 @@
 
 import React from 'react';
-import logo from '../../assets/logo_red.png';
+import logo from '../assets/logo_red.png';
 import {Link} from 'react-router-dom';
-import './Header.scss';
+import '../styles/Header.scss';
 
 
 
