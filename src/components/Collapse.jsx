@@ -19,9 +19,9 @@ const Collapse = (props) => {
 
     return (
         <>
-        <div  className="collapse_header"> 
+        <div  onClick={openClose} className="collapse_header"> 
             <p className="collapse_header_title">{props.title}</p> 
-            {!openWrapper ? <i onClick={openClose} className="collapse_header_image1" alt="">{vectorUp}</i> : <i onClick={openClose} className="collapse_header_image2" alt="">{vectorDown}</i>}
+            {!openWrapper ? <i  className="collapse_header_image1" alt="">{vectorUp}</i> : <i  className="collapse_header_image2" alt="">{vectorDown}</i>}
         </div> 
         {openWrapper &&
             <div className="collapse_content">{props.content}</div>

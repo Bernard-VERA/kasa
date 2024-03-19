@@ -38,16 +38,19 @@
 }
 
 .collapse_content {
-  display: block;
+  display: flex;
   flex-direction: column;
   padding: 20px;
   visibility: visible;
   z-index: 1;
   font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
   background-color: rgba(246, 246, 246, 0.4509803922);
   border-radius: 5px;
-  transform: scaleY(1);
-  transition: all, 3s, ease-in-out;
+  transform-origin: 0 0;
+  transform: translateY(2px);
+  transition: max-height 2s ease-out, padding 3s ease-out;
 }
 
 .collapse_content ul {
