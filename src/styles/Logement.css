@@ -104,6 +104,9 @@
   list-style: none;
   border-radius: 18px;
 }
+.logement-page-collapses-content :hover {
+  cursor: pointer;
+}
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .logement-page-header {

@@ -34,6 +34,10 @@
   height: 52px;
 }
 
+.collapse-header:hover {
+  cursor: pointer;
+}
+
 .collapse-about {
   align-items: center;
   width: 80%;
