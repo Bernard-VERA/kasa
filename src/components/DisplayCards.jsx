@@ -6,8 +6,8 @@ import '../styles/DisplayCards.scss'
 //DisplayCards permet d'afficher les "Cards" créées
 const DisplayCards = () => {
     return(
-        <section className='logements_container'>
-            <ul className='logements_list'>
+        <section className='logements-container'>
+            <ul className='logements-list'>
                 {logements.map(({ id, title, cover }) => (
                     <Card
                         key={id}

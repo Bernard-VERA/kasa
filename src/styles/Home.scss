@@ -1,6 +1,6 @@
 @import "variables";
 
-.main_home {
+.main-home {
     max-width: 1240px;
     margin: auto;
 }
@@ -12,40 +12,41 @@
     border-radius: 25px;
     justify-content: center;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
 
-.banner img {
-    width: 100%;
-    position: relative;
-    height: 223px;
-    max-width: 1240px;
-    object-fit: cover;
-    border-radius: 25px;
-    
-}
+    & img {
+        width: 100%;
+        position: relative;
+        height: 223px;
+        max-width: 1240px;
+        object-fit: cover;
+        border-radius: 25px;
+        
+    }
 
-.banner_title {
-    font-size: 48px;
-    z-index: 1;
-    position: absolute;
-    padding: 20px;
-    margin: 0px 20px;   
-    color: $color-white;
-    text-shadow:0 0 2px $color-black;   
+    &-title {
+        font-size: 48px;
+        z-index: 1;
+        position: absolute;
+        padding: 20px;
+        margin: 0px 20px;   
+        color: $color-white;
+        text-shadow:0 0 2px $color-black;   
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .banner_title {
+    .banner-title {
         font-size: 36px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .banner_title {
+    .banner-title {
         font-size: 24px;
     }
 
-    .banner_img {
+    .banner-img {
         max-height: 111px;
+        border-radius: 10px;
     }
 }

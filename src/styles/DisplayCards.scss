@@ -1,6 +1,6 @@
 @import "variables";
 
-.logements_container {
+.logements-container {
     width: 100%;
     margin: 2rem auto;
     border-radius: 25px;
@@ -8,7 +8,7 @@
     max-width: 1240px;
 }
 
-.logements_list {
+.logements-list {
     display: flex;
     flex-wrap: wrap;
     justify-content:left;
@@ -20,7 +20,7 @@
     width: 33.3%;   
 }
 
-.logement_figure {
+.logement-figure {
     align-items: center;
     border-radius: .5rem;
     display: flex;
@@ -29,37 +29,37 @@
     margin: 1rem;
     position: relative;
     transition: .25s;
-}
 
-.logement_figure:hover {
-    transform: scale(1.02);
-}
-
-.logement_figure_cover {
-    width: 100%;
-    object-fit: cover;
-    height: 290px;
-    border-radius: 10px;  
+    &:hover {
+        transform: scale(1.02);
     }
 
-.logement_figure_figcaption {
-    height: 100px;
-    position: absolute;
-    width: 100%;
-    z-index: 1;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(rgba(255,255,255,0),rgba(10,10,10,0.4),rgba(4,4,4,0.2),rgba(0,0,0,0.5));
-    border-radius: 10px;
-}
+    &-cover {
+        width: 100%;
+        object-fit: cover;
+        height: 290px;
+        border-radius: 10px;  
+        }
 
-.logement_figure_figcaption_title {
-    position: absolute;
-    width: 75%;
-    bottom: 10px;
-    left: 15px;
-    font-size: 18px;
-    color: $color-white;
+    &-figcaption {
+        height: 100px;
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(rgba(255,255,255,0),rgba(10,10,10,0.4),rgba(4,4,4,0.2),rgba(0,0,0,0.5));
+        border-radius: 10px;
+
+        &-title {
+            position: absolute;
+            width: 75%;
+            bottom: 10px;
+            left: 15px;
+            font-size: 18px;
+            color: $color-white;
+        }
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -70,12 +70,12 @@
 }
 
 @media screen and (max-width: 768px) {
-    .logements_container {
+    .logements-container {
         background-color: $color-white;
         margin: 0;
     }
 
-    .logements_list {
+    .logements-list {
         padding: 0;
     }
 
@@ -83,12 +83,12 @@
         width: 100%;
     }
 
-    .logement_figure {
+    .logement-figure {
         margin: auto;
         margin-bottom: 20px;
     }
 
-    .logement_figure_cover {
+    .logement-figure-cover {
         height: 255px;
     }
 }

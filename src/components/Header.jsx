@@ -1,4 +1,3 @@
-
 import React from 'react';
 import logo from '../assets/logo_red.png';
 import {Link} from 'react-router-dom';
@@ -9,7 +8,7 @@ import '../styles/Header.scss';
 function Header() {
 
     return (
-        <header className='header_container'>
+        <header className='header-container'>
             <Link  to="/">
                 <img className='logo' src={logo} alt="logo kasa"/>
             </Link>
@@ -18,7 +17,7 @@ function Header() {
                     <Link className="nav" to="/">Accueil</Link>
                 </div>
                 <div className="navlink">
-                    <Link className="nav" to="About">À propos</Link>
+                    <Link className="nav" to="About">À Propos</Link>
                 </div>
             </nav>
         </header>

@@ -12,11 +12,11 @@
   margin-top: 30px;
   align-items: center;
 }
-.footer .footer_logo {
+.footer .footer-logo {
   margin-top: 66px;
   width: 122px;
 }
-.footer .footer_text {
+.footer .footer-text {
   color: #FFFFFF;
   font-size: 24px;
   margin-top: 50px;
@@ -26,7 +26,7 @@
   .footer {
     margin-top: 0px;
   }
-  .footer .footer_text {
+  .footer .footer-text {
     max-width: 133px;
     margin: 15px auto;
     font-size: 12px;

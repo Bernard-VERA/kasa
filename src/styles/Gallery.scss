@@ -9,11 +9,11 @@
     width: 100%;
     overflow: hidden;
 
-    &_container {
+    &-container {
         display: flex;
         transition: transform 0.2s;
     
-        &_img {
+        &-img {
             flex-shrink: 0;
             width: 100%;
             height: 415px;
@@ -23,7 +23,7 @@
         }
     }
 
-    &_controls {
+    &-controls {
         position: absolute;
         display: flex;
         width: 100%;
@@ -31,13 +31,14 @@
         top: 32%;
         cursor: pointer;
 
-        &_chevron {
+        &-chevron {
             margin: 23px;
             width: 46px;
             height: 79px;
         }    
     }
-    &_idx {
+
+    &-idx {
         font-size: 18px;
         justify-content: flex-end;
         height: 32px;
@@ -51,28 +52,32 @@
 }
 
 @media screen and (max-width: 768px) {
-    .slideshow_container_img {
-        height: 255px;
-    }
+    
+    .slideshow { 
+    
+        &-container-img {
+            height: 255px;
+            border-radius: 10px;
+        }
 
-    .slideshow_controls {
-        top: 42%;
-    }
+        &-controls {
+            top: 42%;
 
-    .slideshow_controls_chevron {
-        height: 24px;
-        width: auto;
-        margin: 10px;
-    }
+            &-chevron {
+                height: 24px;
+                width: auto;
+                margin: 10px;
+            }
 
-    .slideshow_controls_chevron img {
-        height:  24px;
-        padding: 0px;
-        margin: 0px;
-    }
+            &-chevron img {
+                height:  24px;
+                padding: 0px;
+                margin: 0px;
+            }
+        }
 
-    .slideshow_idx {
-        display: none;
+        &-idx {
+            display: none;
+        }
     }
-   
 }

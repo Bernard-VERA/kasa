@@ -1,4 +1,4 @@
-.main_home {
+.main-home {
   max-width: 1240px;
   margin: auto;
 }
@@ -11,7 +11,6 @@
   justify-content: center;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-
 .banner img {
   width: 100%;
   position: relative;
@@ -21,8 +20,7 @@
      object-fit: cover;
   border-radius: 25px;
 }
-
-.banner_title {
+.banner-title {
   font-size: 48px;
   z-index: 1;
   position: absolute;
@@ -33,15 +31,16 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .banner_title {
+  .banner-title {
     font-size: 36px;
   }
 }
 @media screen and (max-width: 768px) {
-  .banner_title {
+  .banner-title {
     font-size: 24px;
   }
-  .banner_img {
+  .banner-img {
     max-height: 111px;
+    border-radius: 10px;
   }
 }/*# sourceMappingURL=Home.css.map */

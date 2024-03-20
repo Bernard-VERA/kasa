@@ -33,19 +33,19 @@ const Gallery = (props) => {
     // "props.img.map" permet de récupérer les images, avec la liste créée par "key"
     return (
         <div className='slideshow'>
-            <div className='slideshow_container' style={{transform: `translateX(-${slideIdx * 100}%)`}}>
+            <div className='slideshow-container' style={{transform: `translateX(-${slideIdx * 100}%)`}}>
                 {props.img.map((picture, i) => 
-                    <img className='slideshow_container_img' alt='diaporama-page-logement' src={picture} key={i} />
+                    <img className='slideshow-container-img' alt='diaporama-page-logement' src={picture} key={i} />
                 )}
             </div>
             
             
             {props.img.length > 1 && <>
-            <div className='slideshow_controls'>
-                <i className='slideshow_controls_chevron' onClick={onPrev}>{angleLeft}</i>
-                <i className='slideshow_controls_chevron' onClick={onNext}>{angleRight}</i>
+            <div className='slideshow-controls'>
+                <i className='slideshow-controls-chevron' onClick={onPrev}>{angleLeft}</i>
+                <i className='slideshow-controls-chevron' onClick={onNext}>{angleRight}</i>
             </div>
-            <div className='slideshow_idx'>{slideIdx + 1} / {props.img.length}</div>
+            <div className='slideshow-idx'>{slideIdx + 1} / {props.img.length}</div>
             </>}
         </div>
     )  // S'il y a plus d'une image, au clic,le chevron et l' "idx" changent 

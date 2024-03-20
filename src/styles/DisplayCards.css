@@ -1,4 +1,4 @@
-.logements_container {
+.logements-container {
   width: 100%;
   margin: 2rem auto;
   border-radius: 25px;
@@ -6,7 +6,7 @@
   max-width: 1240px;
 }
 
-.logements_list {
+.logements-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
@@ -18,7 +18,7 @@
   width: 33.3%;
 }
 
-.logement_figure {
+.logement-figure {
   align-items: center;
   border-radius: 0.5rem;
   display: flex;
@@ -28,20 +28,17 @@
   position: relative;
   transition: 0.25s;
 }
-
-.logement_figure:hover {
+.logement-figure:hover {
   transform: scale(1.02);
 }
-
-.logement_figure_cover {
+.logement-figure-cover {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   height: 290px;
   border-radius: 10px;
 }
-
-.logement_figure_figcaption {
+.logement-figure-figcaption {
   height: 100px;
   position: absolute;
   width: 100%;
@@ -51,8 +48,7 @@
   background: linear-gradient(rgba(255, 255, 255, 0), rgba(10, 10, 10, 0.4), rgba(4, 4, 4, 0.2), rgba(0, 0, 0, 0.5));
   border-radius: 10px;
 }
-
-.logement_figure_figcaption_title {
+.logement-figure-figcaption-title {
   position: absolute;
   width: 75%;
   bottom: 10px;
@@ -67,21 +63,21 @@
   }
 }
 @media screen and (max-width: 768px) {
-  .logements_container {
+  .logements-container {
     background-color: #FFFFFF;
     margin: 0;
   }
-  .logements_list {
+  .logements-list {
     padding: 0;
   }
   .logement {
     width: 100%;
   }
-  .logement_figure {
+  .logement-figure {
     margin: auto;
     margin-bottom: 20px;
   }
-  .logement_figure_cover {
+  .logement-figure-cover {
     height: 255px;
   }
 }/*# sourceMappingURL=DisplayCards.css.map */
