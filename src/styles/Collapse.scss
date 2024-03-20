@@ -1,5 +1,6 @@
 @import "variables";
 
+//Pour la compatibilité avec les navigateurs, on utilise les propriété préfixées.
 .collapse {
     -ms-transition: transform all 0.4s ease-in-out;
     -webkit-transition: transform all 0.4s ease-in-out;
@@ -9,9 +10,7 @@
     overflow: hidden;
 }
     
-   
-
-.collapse_header {
+.collapse-header {
     display: flex;
     width: 100%;
     height: 100%;
@@ -19,36 +18,33 @@
     align-items: center;
     background-color: $color-red;
     border-radius: 7.5px;
-    overflow: hidden;
-}
-        
-.collapse_header_image1 img {
-    transform: rotate(0deg);
-    transition: transform 0.4s ease-in-out;
-    overflow: hidden;
-}
 
-.collapse_header_image2 img{
-    transform: rotate(180deg);
-    transition: transform 0.2s ease-in-out;
-}
-      
-.collapse_header_title {
-    font-size: 24px;
-    font-weight: 700;
-    color: $color-white;
-    padding-left: 14px;
-}
+    &-title {
+        font-size: 24px;
+        font-weight: 700;
+        color: $color-white;
+        padding-left: 14px;
+    }
 
-.collapse_header_image1 {
-    padding-right: 20px;    
-}
+    &-image1 {
+        padding-right: 20px;    
+    }
 
-.collapse_header_image2 {
-    padding-right: 20px;    
-}
+    &-image2 {
+        padding-right: 20px;    
+    }
 
-.collapse_content {
+    &-image1 img {
+        transform: rotate(0deg);
+        transition: transform 0.4s ease-in-out;
+    }
+
+    &-image2 img{
+        transform: rotate(180deg);
+        transition: transform 0.2s ease-in-out;
+    }
+}
+.collapse-content {
     display: block;
     flex-direction: column;
     padding: 20px;
@@ -59,6 +55,8 @@
     border-radius: 5px;
     animation: slide 0.2s ease-out;      
 }
+// keyframe définit le point de départ et d'arrivée de l'animation. Ici "from" suffit.
+// "top" indique le point de départ de l'animation (chevron des collapses) 
 @keyframes slide {
     from {
         transform: scaleY(0.7);
@@ -66,7 +64,7 @@
     }   
 }
 
-.collapse_content ul {
+.collapse-content ul {
     margin-left: -40px;
 }
         
@@ -75,33 +73,33 @@ ul {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-   .collapse_header_title {
+   .collapse-header-title {
         font-size: 18px;
    }
 
-   .collapse_header_image1 img {
+   .collapse-header-image1 img {
         width: 21px;
     }
 
-    .collapse_header_image2 img {
+    .collapse-header-image2 img {
         width: 21px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .collapse_header_title {
+    .collapse-header-title {
         font-size: 13px;
     }
 
-    .collapse_header_image1 img {
-        width: 18px;
+    .collapse-header-image1 img {
+        width: 16px;
     }
 
-    .collapse_header_image2 img {
-        width: 18px;
+    .collapse-header-image2 img {
+        width: 16px;
     }
 
-    .collapse_content {
+    .collapse-content {
         font-size: 12px;
     }
 }

@@ -2,7 +2,7 @@
 
 .logements-container {
     width: 100%;
-    margin: 2rem auto;
+    margin: 32px auto 40px;
     border-radius: 25px;
     background-color: $color-grey;
     max-width: 1240px;
@@ -29,7 +29,8 @@
     margin: 1rem;
     position: relative;
     transition: .25s;
-
+    
+    // Effet au survol des images
     &:hover {
         transform: scale(1.02);
     }

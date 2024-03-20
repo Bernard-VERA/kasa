@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 import Gallery from '../components/Gallery';
 import RatingScale from '../components/RatingScale';
 import Collapse from '../components/Collapse';
-import '../styles/Logement.css'
+import '../styles/Logement.scss'
 import Error from './Error';
 // useParams est importé avec tous les autres composants
 
@@ -18,25 +18,25 @@ const Logement = () => {
   } // Si le logement est "undefined" on est renvoyé vers la page d'erreur
 
   return (
-      <section className='logement_page'>
+      <section className='logement-page'>
         <Gallery 
         img={logement.pictures} 
         />
-        <header className='logement_page_header'>
-                <article className='logement_page_header_infos'>
-                    <p className='logement_page_header_infos_title'>{logement.title}</p>
-                    <p className='logement_page_header_infos_subtitle'>{logement.location}</p>
-                    <div className='logement_page_header_infos_tags'>
+        <header className='logement-page-header'>
+                <article className='logement-page-header-infos'>
+                    <p className='logement-page-header-infos-title'>{logement.title}</p>
+                    <p className='logement-page-header-infos-subtitle'>{logement.location}</p>
+                    <div className='logement-page-header-infos-tags'>
                         {logement.tags.map((tag, i) => (
-                            <p key={i} className='logement_page_header_infos_tags_tag'>{tag}</p>
+                            <p key={i} className='logement-page-header-infos-tags-tag'>{tag}</p>
                         ))}
                     </div> 
                 </article> 
             
-                <article className='logement_page_header_host'>
-                    <div className='logement_page_header_host_infos'>
-                        <p className='logement_page_header_host_infos_name'>{logement.host.name}</p>
-                        <img src={logement.host.picture} alt='host-cover' className='logement_page_header_host_infos_img'/>
+                <article className='logement-page-header-host'>
+                    <div className='logement-page-header-host-infos'>
+                        <p className='logement-page-header-host-infos-name'>{logement.host.name}</p>
+                        <img src={logement.host.picture} alt='host-cover' className='logement-page-header-host-infos-img'/>
                     </div>
                     <RatingScale
                         scaleValue={logement.rating}
@@ -44,14 +44,14 @@ const Logement = () => {
                 </article>
             </header>
 
-            <article className='logement_page_collapses'>
-                <div className='logement_page_collapses_content'>
+            <article className='logement-page-collapses'>
+                <div className='logement-page-collapses-content'>
                     <Collapse
                         title='Description'
                         content={logement.description}
                     />
                 </div>
-                <div className='logement_page_collapses_content'>
+                <div className='logement-page-collapses-content'>
                     <Collapse
                         title='Équipements'
                         content={logement.equipments.map((equipment, i) => (
@@ -65,6 +65,6 @@ const Logement = () => {
         </section>
     )
 }
-// Dans "Header" et "Equipement" les paramètres sont récupérés par "map" dans des listes crées par "key" 
+// Dans "Header" et "Equipement" les paramètres sont récupérés par "map" dans des listes créées par "key" 
 
 export default Logement;

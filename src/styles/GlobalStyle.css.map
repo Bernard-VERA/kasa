@@ -1,1 +1,1 @@
-{"version":3,"sources":["GlobalStyle.scss","GlobalStyle.css"],"names":[],"mappings":"AACQ,+GAAA;AAER;EACI,WAAA;ACDJ;;ADGA;EACI,WAAA;EACA,qCAAA;EACA,gBAAA;ACAJ","file":"GlobalStyle.css"}
+{"version":3,"sources":["GlobalStyle.scss","GlobalStyle.css"],"names":[],"mappings":"AACQ,+GAAA;AAER;EACI,WAAA;ACDJ;;ADGA;EACI,YAAA;EACA,qCAAA;EACA,gBAAA;ACAJ","file":"GlobalStyle.css"}

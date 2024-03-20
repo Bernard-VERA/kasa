@@ -1,34 +1,33 @@
-.rating_star {
+.rating-star {
   width: 400px;
   height: 36px;
   margin-top: 24px;
   text-align: right;
 }
-
-.rating_star_red {
+.rating-star-red {
   width: 36px;
   height: 36px;
   padding-left: 15px;
 }
-
-.rating_star_grey {
+.rating-star-grey {
   width: 36px;
   height: 36px;
   padding-left: 15px;
 }
 
 @media screen and (max-width: 768px) {
-  .rating_star {
+  .rating-star {
     height: 18px;
   }
-  .rating_star img {
+  .rating-star img {
     height: 18px;
   }
-  .rating_star_red {
+  .rating-star-red {
     padding-left: 0px;
     padding-right: 9px;
   }
-  .rating_star_grey {
+  .rating-star-grey {
     padding-left: 0px;
+    padding-right: 9px;
   }
 }/*# sourceMappingURL=RatingScale.css.map */

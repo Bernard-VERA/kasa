@@ -19,16 +19,16 @@ const Collapse = (props) => {
 
     return (
         <>
-        <div  onClick={openClose} className="collapse_header"> 
-            <p className="collapse_header_title">{props.title}</p> 
-            {!openWrapper ? <i  className="collapse_header_image1" alt="">{vectorUp}</i> : <i  className="collapse_header_image2" alt="">{vectorDown}</i>}
+        <div  onClick={openClose} className="collapse-header"> 
+            <p className="collapse-header-title">{props.title}</p> 
+            {!openWrapper ? <i  className="collapse-header-image1" alt="">{vectorUp}</i> : <i  className="collapse-header-image2" alt="">{vectorDown}</i>}
         </div>
         
         {openWrapper &&
-            <div className="collapse_content">{props.content}</div>
+            <div className="collapse-content">{props.content}</div>
         }
         </> // Au clic, "openclose" change l'état du chevron fermé et affiche le contenu des props (texte à afficher)
     ) // le "title" affiche le contenu des props (titres)
 }
 
-export default Collapse
+export default Collapse;

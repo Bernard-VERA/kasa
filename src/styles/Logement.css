@@ -1,12 +1,13 @@
-.logement_page {
+.logement-page {
   max-width: 1240px;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: auto;
+  padding: 0 20px 0 20px;
   font-family: "Montserrat", sans-serif;
 }
 
-.logement_page_header {
+.logement-page-header {
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -15,12 +16,12 @@
   font-style: normal;
 }
 
-.logement_page_header_infos {
+.logement-page-header-infos {
   display: flex;
   flex-direction: column;
 }
 
-.logement_page_header_infos_title {
+.logement-page-header-infos-title {
   display: flex;
   flex-wrap: wrap;
   margin-top: 5px;
@@ -28,19 +29,19 @@
   color: #FF6060;
 }
 
-.logement_page_header_infos_subtitle {
+.logement-page-header-infos-subtitle {
   font-size: 18px;
   color: #000000;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.logement_page_header_infos_tags {
+.logement-page-header-infos-tags {
   display: flex;
   flex-wrap: wrap;
 }
 
-.logement_page_header_infos_tags_tag {
+.logement-page-header-infos-tags-tag {
   display: flex;
   align-items: center;
   width: auto;
@@ -49,27 +50,27 @@
   margin: 10px 15px 0px 0px;
   background-color: #FF6060;
   color: #FFFFFF;
-  border-radius: 10px;
+  border-radius: 9px;
   flex-shrink: 0;
   font-size: 14px;
   font-weight: 700;
   text-align: center;
 }
 
-.logement_page_header_host {
+.logement-page-header-host {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 
-.logement_page_header_host_infos {
+.logement-page-header-host-infos {
   display: flex;
   flex-direction: row;
   height: 64px;
   align-items: center;
 }
 
-.logement_page_header_host_infos_name {
+.logement-page-header-host-infos-name {
   width: 93px;
   height: 52px;
   font-size: 18px;
@@ -79,7 +80,7 @@
   line-height: 27px;
 }
 
-.logement_page_header_host_infos_img {
+.logement-page-header-host-infos-img {
   width: 64px;
   height: 64px;
   -o-object-fit: cover;
@@ -88,82 +89,80 @@
   padding-right: 5px;
 }
 
-.logement_page_collapses {
+.logement-page-collapses {
   display: flex;
   flex-direction: row;
   width: 100%;
   height: auto;
   justify-content: space-between;
   padding-top: 35px;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
 }
 
-.logement_page_collapses_content {
+.logement-page-collapses-content {
   width: 46%;
   list-style: none;
   border-radius: 18px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .logement_page_header {
+  .logement-page-header {
     flex-direction: column;
   }
-  .logement_page_header_host {
+  .logement-page-header-host {
     flex-direction: row-reverse;
     align-items: flex-start;
     justify-content: space-between;
     padding-top: 30px;
   }
-  .rating_star {
+  .rating-star {
     text-align: left;
     width: 200px;
   }
-  .logement_page_collapses {
+  .logement-page-collapses {
     flex-direction: column;
     gap: 40px;
   }
-  .logement_page_collapses_content {
+  .logement-page-collapses-content {
     width: 100%;
   }
 }
 @media screen and (max-width: 768px) {
-  .logement_page_header {
+  .logement-page-header {
     flex-direction: column;
     margin-top: 15px;
   }
-  .logement_page_header_host {
+  .logement-page-header-host {
     flex-direction: row-reverse;
     align-items: flex-start;
     justify-content: space-between;
-    padding-top: 30px;
+    padding-top: 15px;
   }
-  .rating_star {
+  .rating-star {
     text-align: left;
     width: 200px;
   }
-  .logement_page_collapses {
+  .logement-page-collapses {
     flex-direction: column;
     gap: 40px;
+    padding-top: 13px;
+    padding-bottom: 30px;
+    gap: 31px;
   }
-  .logement_page_collapses_content {
+  .logement-page-collapses-content {
     width: 100%;
   }
-}
-@media screen and (max-width: 768px) {
-  .logement_page_header_infos_title {
+  .logement-page-header-infos-title {
     font-size: 18px;
   }
-  .logement_page_header_infos_subtitle {
+  .logement-page-header-infos-subtitle {
     font-size: 14px;
   }
-  .logement_page_header_infos_tags_tag {
+  .logement-page-header-infos-tags-tag {
     width: auto;
     height: 18px;
     font-size: 10px;
     border-radius: 5px;
-  }
-  .logement_page_header_host {
-    padding-top: 10px;
   }
   .logement_page_header_host_infos_name {
     width: 60px;
@@ -171,13 +170,8 @@
     font-size: 12px;
     line-height: 18px;
   }
-  .logement_page_header_host_infos_img {
+  .logement-page-header-host-infos-img {
     width: 32px;
     height: 32px;
-  }
-  .logement_page_collapses {
-    padding-top: 13px;
-    padding-bottom: 30px;
-    gap: 31px;
   }
 }/*# sourceMappingURL=Logement.css.map */

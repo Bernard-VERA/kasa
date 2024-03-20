@@ -1,7 +1,7 @@
 import React from 'react';
 import greystar from '../assets/greystar.png';
 import redstar from '../assets/redstar.png';
-import '../styles/RatingScale.css'
+import '../styles/RatingScale.scss'
 
 const star_red = <img className='redstar' src={redstar} alt=""/>;
 const star_grey = <img className='greystar' src={greystar} alt=""/>;
@@ -14,14 +14,14 @@ function RatingScale (props) {
 
 // Puis on passe les paramètres. "map"permet de récupérer les éléments créés par "key"
     return (
-        <div className='rating_star'>
+        <div className='rating-star'>
             {range.map((rangeElem) =>
                 scaleValue >= rangeElem ? 
-                    <span key={rangeElem} className='rating_star_red'>{star_red}</span> : 
-                    <span key={rangeElem} className='rating_star_grey'>{star_grey}</span>
+                    <span key={rangeElem} className='rating-star-red'>{star_red}</span> : 
+                    <span key={rangeElem} className='rating-star-grey'>{star_grey}</span>
             )}
         </div>        
     )
 }
 
-export default RatingScale
+export default RatingScale;

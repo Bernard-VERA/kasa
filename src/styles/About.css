@@ -1,6 +1,7 @@
-.main_about {
+.main-about {
   max-width: 1240px;
   margin: auto;
+  padding: 0 20px;
 }
 
 .banner {
@@ -22,18 +23,18 @@
   filter: brightness(70%);
 }
 
-.collapse_group {
+.collapse-group {
   display: flex;
   flex-direction: column;
   gap: 10px;
   margin-top: 45px;
 }
 
-.collapse_header {
+.collapse-header {
   height: 52px;
 }
 
-.collapse_about {
+.collapse-about {
   align-items: center;
   width: 80%;
   margin: auto;
@@ -54,15 +55,16 @@
     height: 111px;
     border-radius: 10px;
   }
-  .collapse_group {
+  .collapse-group {
     margin-bottom: -1px;
     margin-top: -8px;
     gap: 0px;
   }
-  .collapse_about {
+  .collapse-about {
     width: 100%;
+    margin-bottom: 27px;
   }
-  .collapse_header {
+  .collapse-header {
     height: 30px;
     border-radius: 5px;
   }

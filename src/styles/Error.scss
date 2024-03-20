@@ -9,27 +9,28 @@
    padding: 16px;
    gap: 105px;
   
-   .error-page-number {
-      font-size: 288px;
-      color: $color-red;
-   }
+      .error-page-number {
+         font-size: 288px;
+         color: $color-red;
+      }
 
-   .error-page-text {
-      font-size: 36px;
-      color: $color-red;
-   }
+      .error-page-text {
+         font-size: 36px;
+         color: $color-red;
+      }
 
-   .error-page-link {
-      font-size: 18px;
-      color: $color-black;
-      margin-bottom: 120px;
-      text-underline-position: under;
-   }
+      .error-page-link {
+         font-size: 18px;
+         color: $color-black;
+         margin-bottom: 120px;
+         text-underline-position: under;
+      }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
    
    .error-page { 
+      
       .error-page-number {
          font-size: 200px;
       }
